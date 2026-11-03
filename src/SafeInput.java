@@ -172,7 +172,7 @@ public static String getRegExString (Scanner pipe, String prompt, String regExPa
     do
     {
         System.out.print("\n" + prompt + ":");
-        response = pipe.nextLine();
+        response = pipe.nextLine().trim();
         if (response.matches(regExPattern))
         {
             gotAval = true;
